@@ -1,0 +1,7 @@
+th, td, caption {
+  border:1px solid black;
+  padding: 3px;
+  border-style: double;
+  text-align: center;
+  }
+

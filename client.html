@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadbike</title>
+    <script src="js/funcionesClient.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+   
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quadbike.html">Quadbike</a></li>
+            <li><a href="client.html">Clientes</a></li>
+            <li><a href="message.html">Mensajes</a></li>
+            
+        </ul>
+    </nav>
+
+    <h2>Registrar Cliente</h2>
+    <br>
+    <input type="number" id="idCliente" placeholder="Id"> </input>
+    <input type="text" id="nameCliente" placeholder="Name"> </input>
+    <input type="text" id="emailCliente" placeholder="Email"> </input>
+    <input type="number" id="ageCliente" placeholder="Age"> </input>
+    <br>
+    <br>
+    <button onclick="insertar()"> Agregar </button>
+    <button onclick="borrar()"> Borrar </button>
+    <button onclick="actualizar()"> Actualizar </button>
+    <br>
+    <br>
+    <h2>Consultar Cliente</h2>
+    <button onclick="consultar()"> Mostrar </button>
+    <input type="number" id="idConsulta" placeholder="Id a Buscar"> </input>
+    <button onclick="consultarId()"> Buscar por Id </button>
+    <br>
+    <br>
+    <div id="idDivConsulta">
+    </div>
+    
+</body>
+</html>

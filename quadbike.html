@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuadBike</title>
+    <script src="js/funcionesQuadbike.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+   
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="quadbike.html">Quadbike</a></li>
+            <li><a href="client.html">Clientes</a></li>
+            <li><a href="message.html">Mensajes</a></li>
+            
+        </ul>
+    </nav>
+
+    <h2>Registrar Quadbike</h2>
+    
+    <input type="number" id="idQuadbike" placeholder="Id"> </input>
+    <input type="text" id="brandQuadbike" placeholder="Brand"> </input>
+    <input type="number" id="modelQuadbike" placeholder="Model"> </input>
+    <input type="number" id="categoryIdQuadbike" placeholder="Category ID"> </input>
+    <input type="text" id="nameQuadbike" placeholder="Name"> </input>
+    <br>
+    <br>
+    <button onclick="insertar()"> Agregar </button>
+    <button onclick="borrar()"> Borrar </button>
+    <button onclick="actualizar()"> Actualizar </button>
+    <br>
+    <br>
+
+    <h2>Consultar Quadbike</h2>
+    <button onclick="consultar()"> Mostrar </button>
+    <input type="number" id="idConsulta" placeholder="Id a Buscar"> </input>
+    <button onclick="consultarId()"> Consultar por Id </button>
+    <br>
+    <br>
+    <div id="idDivConsulta">
+    </div>
+    
+</body>
+</html>
